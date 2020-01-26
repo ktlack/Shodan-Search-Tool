@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/shodan.css">
+
+  <title>Shodan Search Tool</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Shodan Search Tool</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Introduction</a>
+        <a class="nav-item nav-link" href="shodan.html">Basic Domain Information</a>
+        <a class="nav-item nav-link" href="shodanService.html">Service Information</a>
+        <a class="nav-item nav-link" href="shodanVulns.html">Vulnerability Information</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main" class="container-fluid">
+
+    <h1 class="display-4">Introduction to The Shodan Search Tool</h1>
+    <hr />
+
+    <h5>The Shodan Search Tool assists users by specially crafting the search query based on minimal user input.</h5>
+    <p>Users are able to:</p>
+    <ul>
+      <li>Discover all publically available devices on their network</li>
+      <li>Identify vulnerabilities specific to each host</li>
+      <li>Search for devices on their network by port, software type, HTTP status code, vulnerability or keyword</li>
+    </ul>
+
+    <br /><br />
+    <h5>Not quite sure what Shodan is??</h5>
+    <p>Quite simply, Shodan is the search engine for the internet of things (IoT)</p>
+    <p>Unlike Google, which crawls for data on web pages and then creates an index of web content, Shodan mainly looks for ports and then grabs the resulting banners and indexes them. Specifically, Shodan uses distributed scanners throughout the world to randomly select target IP addresses and identify listening TCP and UDP ports. Listening ports are further enumerated to gather protocol banners, web pages, and other service data. All of this data is then added to an enormous, searchable database that describes the "what" of Internet devices.</p>
+
+    <br />
+
+  </main>
+
+  <footer class="footer text-muted small">
+    <a href="https://developer.shodan.io/"><img src="images/shodan.png" /></a>
+    <br />
+    This product uses the Shodan API but is not endorsed or certified by Shodan.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+
+</body>
+
+</html>

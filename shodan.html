@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/shodan.css">
+
+  <title>Shodan Search Tool</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Shodan Search Tool</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Introduction</a>
+        <a class="nav-item nav-link active" href="#">Basic Domain Information</a>
+        <a class="nav-item nav-link" href="shodanService.html">Service Information</a>
+        <a class="nav-item nav-link" href="shodanVulns.html">Vulnerability Information</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main" class="container-fluid">
+
+    <h1 class="display-4">Basic Domain Information</h1>
+    <h5 class="subHeader">Displays information about publically available hosts residing on the domain</h5>
+    <br />
+
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Enter your API Key" id="api_key">
+      </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Domain" id="domain">
+      </div>
+
+      <div class="col">
+        <button id="getButton" class="btn btn-info">Get Domain Information</button>
+      </div>
+
+      <div class="col">
+        <button id="clearButton" class="btn btn-info">Reset</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="text-muted" id="resultsNum"></div>
+
+    <table class="table table-hover" id="output">
+      <thead class="thead-dark">
+        <th>IP Address</th>
+        <th>Port</th>
+        <th>Server Type</th>
+        <th>Available Hostnames</th>
+        <th>Vulnerable</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div id="error" class="error"></div>
+    <hr />
+
+    <div id="chart_container">
+      <canvas id="myLineChart"></canvas>
+    </div>
+
+    <br />
+
+  </main>
+
+  <footer class="footer text-muted small">
+    <a href="https://developer.shodan.io/"><img src="images/shodan.png" /></a>
+    <br />
+    This product uses the Shodan API but is not endorsed or certified by Shodan.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+  <script src="scripts/shodan.js"></script>
+</body>
+
+</html>

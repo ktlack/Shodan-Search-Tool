@@ -1,0 +1,41 @@
+.container-fluid {
+  padding: 20px;
+}
+
+.text-muted{
+  font-size: large;
+  font-weight: bold;
+}
+
+.error{
+  color: red;
+  font-size: large;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+    background-color: darkgrey;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.subHeader {
+  font-style: italic;
+}
+
+.nobullet {
+  padding: 0;
+  list-style-type: none;
+}
+
+th {
+  width: 100px;
+}
